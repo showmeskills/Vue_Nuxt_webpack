@@ -7,7 +7,10 @@
 
 <script>
 export default {
-    
+    beforeRouteLeave(to,from,next){
+        console.log('pages before route leave defence')
+        next();
+    }
 }
 </script>
 

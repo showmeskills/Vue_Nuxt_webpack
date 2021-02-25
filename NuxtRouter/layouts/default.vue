@@ -9,6 +9,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  middleware(){
+    console.log('middleware layouts gloabl router defencer')
+  }
+}
+</script>
+
 <style>
 html {
   font-family:

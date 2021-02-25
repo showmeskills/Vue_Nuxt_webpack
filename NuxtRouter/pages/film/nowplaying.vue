@@ -13,7 +13,7 @@
 export default {
     data(){
         return{
-            datalist:['1111','2222','3333']
+            datalist:['1111','2222',3333]
         }
     },
     methods:{
