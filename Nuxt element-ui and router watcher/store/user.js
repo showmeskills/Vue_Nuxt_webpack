@@ -1,0 +1,21 @@
+export const state = ()=>({
+    err:1,
+    msg:'未登录',
+    token:'',
+})
+
+export const mutations = {
+    M_UPDATE_USER(user,payload){
+        user.err = payload.err;
+        user.msg = payload.msg;
+        user.data = payload.data;
+        user.token = payload.token;
+    }
+}
+
+export const actions = {
+    A_UPDATE_USER({commit,state},payload){
+        //可以做同步和异步任务
+        commit('M_UPDATE_USER',payload)
+    }
+}
