@@ -1,0 +1,18 @@
+/*统一路由动效*/
+/*动画形式*/
+/*入*/
+.page-enter-active,.page-leave-active{
+    transition: opacity .5s;
+}
+/*退*/
+.page-enter,.page-leave-active{
+    opacity: 0;
+}
+
+
+.test-enter-active,.test-leave-active{
+    transition: .5s ease all;
+}
+.test-enter,.test-leave-active{
+    margin-left: -1000px;
+}
